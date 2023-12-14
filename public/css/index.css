@@ -1,0 +1,38 @@
+#main {
+  display: grid;
+  grid-template-rows: 20% 110% 50% 20%;
+}
+
+/* Main Children Styles */
+
+#i-head {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+#i-body {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#i-extra {
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+#footer-placeholder {
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+/* I Head Children */
+
+
+
+/* I Body Children */
+
+/* I Extra Children */
+
+/* Footer Children */
