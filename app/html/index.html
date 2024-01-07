@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
   <title> Will Otterbein </title>
@@ -21,20 +21,106 @@
     <!-- Index Head -->
     <div id="i-head">
       <!-- Navbar placeholder -->
-      <nav id="nav-placeholder"> Navbar </nav>  
+      <nav id="nav-placeholder"></nav>  
 
       <!-- Head Modal -->
-      <div id="i-head-modal"> Hello </div>
+      <div id="i-head-modal">
+        <div id="i-head-info">
+          <div id="-i-head-info-text">
+            <h1 class="head-text-misc" id="i-head-title"></h1>
+            <h3 class="head-text-misc" id="i-head-subtitle"></h3>
+            <p class="head-text-misc" id="i-head-text1"></p>
+            <p class="head-text-misc" id="i-head-text2"></p>
+            <p class="head-text-misc" id="i-head-text3"></p>
+          </div>
+        </div>
+        <div id="i-head-picture">
+          <img id="index-you-image" alt="willOtterbein" src="/img/ModalImage.png"/>
+        </div>
+      </div>
     </div>
 
     <!-- Index body -->
-    <div id="i-body"> Body </div>
+    <div id="i-body">
+      <img id="i-body-gif" alt="wtf" src="/img/matrix.jpg"/>
+      <div id="i-body-color"></div>
+
+      <!-- Projects Section -->
+      <div id="projects-overview">
+        <div class="container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+            </label>
+          </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="play-icon">
+                <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                  <defs/>
+                  <path d="M5 3l14 9-14 9V3z"/>
+                </svg>
+              </div>
+              <div class="info-area" id="test">
+                <label class="song-info" id="song-info-1">
+                  <div class="title">Bunker</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Balthazar</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">Words Remain</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Moderator</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">Falling Out</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Otzeki</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="progress"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Blurb -->
+      <div id="projects-description">
+        <div class="i-body-info-container">
+          <h3 id="i-body-subtitle1"> Projects Preview </h3>
+          <p>
+            Here's a preview of some of the projects that I have completed.
+            Go to the projects page for a full list of projects, with additional
+            details for each one.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Index Extra -->
-    <div id="i-extra"> Extra </div>
+    <div id="i-extra">
+      <div id="i-extra-color"></div>
+    </div>
 
     <!-- Footer placeholder -->
-    <footer id="footer-placeholder"> Footer </footer>
+    <footer id="footer-placeholder"></footer>
   </div>
 
   <!-- App Scripts -->

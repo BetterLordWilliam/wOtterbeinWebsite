@@ -21,7 +21,47 @@ app.get("/", function(req, res) {
   res.send(doc);
 });
 
+// -------------------------------------------------
+// Function to handle HTML requests from the client.
+// -------------------------------------------------
+app.get("/html", function(req, res) {
+  let formatOfReq = req.query["format"];
+  let toSend;
 
+  // Get navbar html.
+  if (formatOfReq == "nav") {        
+    toSend = fs.readFileSync("./app/html/navbar.html", "UTF-8");
+    res.setHeader("Content-Type", "text/html");
+    res.send(toSend);
+
+  // Get footer html.
+  } else if (formatOfReq == "foot") {
+    toSend = fs.readFileSync("./app/html/footer.html", "UTF-8");
+    res.setHeader("Content-Type", "text/html");
+    res.send(toSend); 
+
+  } else {
+    console.log("Unrecognized html request.");
+  }
+
+});
+
+// -------------------------------------------------
+// Function to handle JSON requests from the client.
+// -------------------------------------------------
+app.get("/jdata", function(req, res) {
+  let formatOfReq = req.query["format"];
+  let toSend;
+
+  // Get head modal data.
+  if (formatOfReq == "i-head") {
+    toSend = fs.readFileSync("./app/data/indexDAT.js");
+    toSend = JSON.parse(toSend)[0].headContent;
+    res.setHeader("Content-Type", "program/json");
+    res.send(toSend);
+  }
+
+});
 
 // ---------------------------
 // Page not found information.
