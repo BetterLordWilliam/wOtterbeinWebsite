@@ -12,6 +12,8 @@ app.use("/css", express.static("./public/css"));
 app.use("/img", express.static("./public/images"));
 app.use("/fonts", express.static("./public/fonts"));
 
+app.use("/experience", express.static("./app/html/experience.html"));
+
 // -----------------------
 // Send index and related.
 // -----------------------
@@ -28,16 +30,15 @@ app.get("/", function(req, res) {
 app.get("/html", function(req, res) {
   let formatOfReq = req.query["format"];
   console.log(formatOfReq);
-  let toSend;
 
   if (formatOfReq == "experience") {
-
+    res.sendFile(fs.readFileSync("/experience"));
 
   } else if (formatOfReq == "projects") {
-
+    res.redirect("./app/html/projects.html");
 
   } else if (formatOfReq == "contact") {
-
+    res.redirect("./app/html/contact.html");
 
   } else {
     console.log("Unrecognized html request.");
