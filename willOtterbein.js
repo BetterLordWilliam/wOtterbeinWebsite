@@ -4,6 +4,7 @@ const fs = require('fs');
 
 // App Stuff Cont.
 const app = express();
+const router = express.Router();
 
 // Resource paths.
 app.use("/js", express.static("./public/scripts"));
@@ -21,10 +22,34 @@ app.get("/", function(req, res) {
   res.send(doc);
 });
 
-// -------------------------------------------------
-// Function to handle HTML requests from the client.
-// -------------------------------------------------
+// ------------------------------------------------------
+// Function to handle html page requests from the client.
+// ------------------------------------------------------
 app.get("/html", function(req, res) {
+  let formatOfReq = req.query["format"];
+  console.log(formatOfReq);
+  let toSend;
+
+  if (formatOfReq == "experience") {
+
+
+  } else if (formatOfReq == "projects") {
+
+
+  } else if (formatOfReq == "contact") {
+
+
+  } else {
+    console.log("Unrecognized html request.");
+
+  }
+
+});
+
+// ---------------------------------------------------------
+// Function to handle HTML snippet requests from the client.
+// ---------------------------------------------------------
+app.get("/hsnip", function(req, res) {
   let formatOfReq = req.query["format"];
   let toSend;
 
