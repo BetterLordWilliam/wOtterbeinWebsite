@@ -2,7 +2,7 @@
 // Function to populate the head modal.
 // ------------------------------------
 function populateHeadModal() {
-  ajaxGET("/jdata?format=i-head", function(data) {
+  ajaxGET("/headdata?format=i-head", function(data) {
     let df = JSON.parse(data); 
     
     // Find and populate appropriate HTML elements.

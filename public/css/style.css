@@ -24,6 +24,13 @@ body {
   align-items: center;
 }
 
+/* Global Element Styles */
+
+.head {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
 /* Global buttons styles */
 
 .reg-nav-button {

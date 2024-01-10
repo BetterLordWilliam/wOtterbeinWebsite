@@ -30,8 +30,7 @@ app.get("/hsnip", function(req, res) {
   } else if (formatOfReq == "foot") {
     toSend = fs.readFileSync("./app/html/footer.html", "UTF-8");
     res.setHeader("Content-Type", "text/html");
-    res.send(toSend); 
-
+    res.send(toSend);
   } else {
     console.log("Unrecognized html request.");
   }
@@ -41,16 +40,23 @@ app.get("/hsnip", function(req, res) {
 // -------------------------------------------------
 // Function to handle JSON requests from the client.
 // -------------------------------------------------
-app.get("/jdata", function(req, res) {
+app.get("/headdata", function(req, res) {
   let formatOfReq = req.query["format"];
   let toSend;
 
-  // Get head modal data.
+  // Get head modal data (for all pages).
   if (formatOfReq == "i-head") {
     toSend = fs.readFileSync("./app/data/indexDAT.js");
     toSend = JSON.parse(toSend)[0].headContent;
     res.setHeader("Content-Type", "program/json");
     res.send(toSend);
+
+  } else if (formatOfReq == "p-head") {
+    toSend = fs.readFileSync("./app/data/projectsDAT.js");
+    toSend = JSON.parse(toSend)[0].headContent;
+    res.setHeader("Content-Type", "program/json");
+    res.send(toSend);
+  
   }
 
 });

@@ -1,29 +1,17 @@
-// ------------------
-// AJAX Get function.
-// ------------------
-function ajaxGET(url, callback) {
-  let xhr = new XMLHttpRequest();
-
-  xhr.onload = function() {
-    if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-      callback(this.responseText);
-    } else {
-      console.log(this.status);
-    }
-  };
-
-  xhr.open("GET", url);
-  xhr.send();
+// ------------------------------------
+// Function to populate the head modal.
+// ------------------------------------
+function populateHeadModal() {
+  ajaxGET("/headdata?format=p-head", function(data) {
+    let df = JSON.parse(data); 
+    
+    // Find and populate appropriate HTML elements.
+    document.querySelector("#p-head-title").innerHTML = df.modalTitle;
+    document.querySelector("#p-head-subtitle").innerHTML = df.modalSubTitle;
+    document.querySelector("#p-head-text1").innerHTML = df.modalText;
+    document.querySelector("#p-head-text2").innerHTML = df.modalText1;
+  });
 }
-
-// --------------
-// Setup buttons.
-// --------------
-function loadButtons() {
-  // Do something...
-}
-
-
 
 // -----------------------------------
 // Setup onload.
@@ -34,9 +22,6 @@ function loadButtons() {
 // That's pretty much it..
 // -----------------------------------
 function onload() {
-  // Call function to setup page buttons.
-  loadButtons();
-
   // Insert the page navbar.
   ajaxGET("/hsnip?format=nav", function(data) {
     let nav = document.querySelector("#nav-placeholder");
@@ -50,6 +35,8 @@ function onload() {
     foot.innerHTML = data;
     footerButtons(foot);
   });
+
+  populateHeadModal();
 
   console.log("Loaded");
 }
