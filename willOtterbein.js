@@ -1,51 +1,17 @@
 // SETUP
 const express = require('express');
+const http = require('http');
+const path = require('path');
 const fs = require('fs');
 
 // App Stuff Cont.
 const app = express();
-const router = express.Router();
 
 // Resource paths.
 app.use("/js", express.static("./public/scripts"));
 app.use("/css", express.static("./public/css"));
 app.use("/img", express.static("./public/images"));
 app.use("/fonts", express.static("./public/fonts"));
-
-app.use("/experience", express.static("./app/html/experience.html"));
-
-// -----------------------
-// Send index and related.
-// -----------------------
-app.get("/", function(req, res) {
-  let doc = fs.readFileSync("./app/html/index.html", "utf8");
-
-  // Send the index document.
-  res.send(doc);
-});
-
-// ------------------------------------------------------
-// Function to handle html page requests from the client.
-// ------------------------------------------------------
-app.get("/html", function(req, res) {
-  let formatOfReq = req.query["format"];
-  console.log(formatOfReq);
-
-  if (formatOfReq == "experience") {
-    res.sendFile(fs.readFileSync("/experience"));
-
-  } else if (formatOfReq == "projects") {
-    res.redirect("./app/html/projects.html");
-
-  } else if (formatOfReq == "contact") {
-    res.redirect("./app/html/contact.html");
-
-  } else {
-    console.log("Unrecognized html request.");
-
-  }
-
-});
 
 // ---------------------------------------------------------
 // Function to handle HTML snippet requests from the client.
@@ -89,12 +55,33 @@ app.get("/jdata", function(req, res) {
 
 });
 
-// ---------------------------
-// Page not found information.
-// ---------------------------
-app.use(function (req, res, next) {
-  // 404 Not found to come.
-  res.status(404).send("<html><head><title>Page not found!</title></head><body><p>Nothing here.</p></body></html>");
+// ---------------
+// Page structure.
+// ---------------
+// Home
+// -> Experience  
+// -> Projects
+// -> Contact
+// ---------------
+
+// ---------------------------------
+// Function for the index page.
+// LANDING PAGE.
+// ---------------------------------
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/app/html/index.html"));
+});
+
+app.get("/experience", (req, res) => {
+  res.sendFile(path.join(__dirname, "/app/html/experience.html"));
+});
+
+app.get("/projects", (req, res) => {
+  res.sendFile(path.join(__dirname, "/app/html/projects.html"));
+});
+
+app.get("/contact", (req, res) => {
+  res.sendFile(path.join(__dirname, "/app/html/contact.html"));
 });
 
 // Server Info.
@@ -103,6 +90,4 @@ const port = 8000;
 // ----------------
 // Server creation.
 // ----------------
-app.listen(port, function() {
-  console.log("App listning on port " + port);
-});
+app.listen(port);

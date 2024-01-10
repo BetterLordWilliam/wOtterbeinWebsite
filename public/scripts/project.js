@@ -38,13 +38,17 @@ function onload() {
   loadButtons();
 
   // Insert the page navbar.
-  ajaxGET("/html?format=nav", function(data) {
-    document.querySelector("#nav-placeholder").innerHTML = data;
+  ajaxGET("/hsnip?format=nav", function(data) {
+    let nav = document.querySelector("#nav-placeholder");
+    nav.innerHTML = data;
+    navButtons(nav);
   });
 
   // Insert the page footer.
-  ajaxGET("/html?format=foot", function(data) {
-    document.querySelector("#footer-placeholder").innerHTML = data;
+  ajaxGET("/hsnip?format=foot", function(data) {
+    let foot = document.querySelector("#footer-placeholder");
+    foot.innerHTML = data;
+    footerButtons(foot);
   });
 
   console.log("Loaded");

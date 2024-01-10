@@ -16,30 +16,38 @@ function ajaxGET(url, callback) {
   xhr.send();
 }
 
+function pageGET(url) {
+  let htr = new XMLHttpRequest();
+  htr.open("GET", url);
+  htr.send();
+}
+
 // ---------------------
 // Setup navbar buttons.
 // ---------------------
 function navButtons(nav) {
-  console.log("Nav buttons setup complete.");
-
   // Home image
   nav.querySelector("#nav-img").addEventListener("click", () => {
-
+    console.log("Home");
+    window.location.href = "/";
   }, false);
 
   // Experience
   nav.querySelector("#exp-link").addEventListener("click", () => {
-    
+    console.log("Experience");
+    window.location.href = "/experience";
   }, false);
 
   // Projects
   nav.querySelector("#proj-link").addEventListener("click", () => {
-    
+    console.log("Projects");
+    window.location.href = "/projects";
   }, false);
 
   // Contacts
   nav.querySelector("#contact-link").addEventListener("click", () => {
-
+    console.log("Contact");
+    window.location.href = "/contact";
   }, false);
 }
 
@@ -47,5 +55,4 @@ function navButtons(nav) {
 // Setup footer buttons.
 // ---------------------
 function footerButtons(foot) {
-  console.log("Foot buttons setup complete.");
 }
