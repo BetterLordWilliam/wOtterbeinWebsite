@@ -13,6 +13,7 @@ app.use("/js", express.static("./public/scripts"));
 app.use("/css", express.static("./public/css"));
 app.use("/img", express.static("./public/images"));
 app.use("/fonts", express.static("./public/fonts"));
+app.use("/fonts", express.static("./public/html"))
 
 // ---------------------------------------------------------
 // Function to handle HTML snippet requests from the client.

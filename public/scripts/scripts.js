@@ -16,12 +16,6 @@ function ajaxGET(url, callback) {
   xhr.send();
 }
 
-function pageGET(url) {
-  let htr = new XMLHttpRequest();
-  htr.open("GET", url);
-  htr.send();
-}
-
 // ---------------------
 // Setup navbar buttons.
 // ---------------------
