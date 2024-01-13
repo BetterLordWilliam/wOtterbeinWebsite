@@ -26,7 +26,16 @@
 
       <!-- Head Modal -->
       <div class="head" id="c-head-modal">
-        
+        <div id="cf-container">
+          <form id="cf-actual" onsubmit="sendEmail(); reset(); return false;">
+            <h3> Let's Talk </h3>
+            <input type="text" id="cnt-name" placeholder="Your Name" required/>
+            <input type="email" id="cnt-email" placeholder="your@email.address" required/>
+            <input type="phone" id ="cnt-phone" placeholder="999-999-9999" required/>
+            <textarea id="cnt-message" rows="10" placeholder="Hello there."></textarea>
+            <button type="submit" id="cnt-cf-subBut"> Send </button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -35,6 +44,14 @@
   </div>
 
   <!-- App Scripts -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("EHnvpP5P1xpyxZ0Gp");
+    })();
+  </script>
   <script src="/js/scripts.js"></script>
   <script src="/js/contact.js"></script>
 

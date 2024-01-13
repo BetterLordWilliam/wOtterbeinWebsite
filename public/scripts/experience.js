@@ -21,8 +21,6 @@ function onload() {
     footerButtons(foot);
   });
 
-
-
   console.log("Loaded");
 }
 
