@@ -21,3 +21,57 @@
   grid-row-start: 2;
   grid-row-end: 2;
 }
+
+/* Head Modal Children */
+
+#cf-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Form */
+
+#cf-actual {
+  display: flex;
+  flex-direction: column;
+  background: rgba(187, 187, 187, 0.55);
+  padding: 2em;
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Form Elements */
+
+form h3 {
+  font-weight: 800;
+  margin: 0 0.5em 1em 0.5em;
+
+}
+
+input, textarea {
+  border: 0;
+  margin: 0.5em;
+  padding: 1em;
+  outline: none;
+  background: #ffff;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+form button {
+  margin: 0.5em;
+  padding: 1em;
+  background: #ffff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 75px;
+  margin: 1em 45% 0 45%;
+  border-radius: 10px;
+}

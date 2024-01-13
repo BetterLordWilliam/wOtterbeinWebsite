@@ -1,3 +1,28 @@
+const serviceId = "service_mm3gzga";
+const emailTemplate1 = "template_kqh9p8j";
+
+// ------------------------------------------------
+// Function to send an email from the contact page.
+// ------------------------------------------------
+function sendEmail() {
+  let emailTemplateContent = {
+    from_name: document.querySelector("#cnt-name").value,
+    to_name: "Will Otterbein",
+    from_email: document.querySelector("#cnt-email").value,
+    from_phone: document.querySelector("#cnt-phone").value,
+    message: document.querySelector("#cnt-message").value 
+  };
+
+  // Actually send the email.
+  emailjs.send(
+    serviceId, 
+    emailTemplate1, 
+    emailTemplateContent
+  ).then(
+    alert("Email message sent.")
+  );
+}
+
 // -----------------------------------
 // Setup onload.
 // Loads necessary website components.
