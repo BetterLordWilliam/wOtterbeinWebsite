@@ -16,37 +16,53 @@ function ajaxGET(url, callback) {
   xhr.send();
 }
 
+// --------------------------------------------------
+// Attaches correct routing functionality to buttons.
+// --------------------------------------------------
+function pageLinks(elem) {
+  // Home image
+  try {
+    elem.querySelector("#nav-img").addEventListener("click", () => {
+      console.log("Home");
+      window.location.href = "/";
+    }, false); 
+  } catch(TypeError) {}
+
+  // Experience -> No a thing yet...
+  try {
+    elem.querySelector("#exp-link").addEventListener("click", () => {
+      console.log("Experience");
+      window.location.href = "/experience";
+    }, false);
+  } catch (TypeError) {}
+
+  // Projects
+  try {
+    elem.querySelector("#proj-link").addEventListener("click", () => {
+      console.log("Projects");
+      window.location.href = "/projects";
+    }, false);
+  } catch (TypeError) {}
+
+  // Contacts
+  try {
+    elem.querySelector("#contact-link").addEventListener("click", () => {
+      console.log("Contact");
+      window.location.href = "/contact";
+    }, false);
+  } catch(TypeError) {}
+}
+
 // ---------------------
 // Setup navbar buttons.
 // ---------------------
 function navButtons(nav) {
-  // Home image
-  nav.querySelector("#nav-img").addEventListener("click", () => {
-    console.log("Home");
-    window.location.href = "/";
-  }, false);
-
-  // Experience
-  nav.querySelector("#exp-link").addEventListener("click", () => {
-    console.log("Experience");
-    window.location.href = "/experience";
-  }, false);
-
-  // Projects
-  nav.querySelector("#proj-link").addEventListener("click", () => {
-    console.log("Projects");
-    window.location.href = "/projects";
-  }, false);
-
-  // Contacts
-  nav.querySelector("#contact-link").addEventListener("click", () => {
-    console.log("Contact");
-    window.location.href = "/contact";
-  }, false);
+  pageLinks(nav);
 }
 
 // ---------------------
 // Setup footer buttons.
 // ---------------------
 function footerButtons(foot) {
+  pageLinks(foot);
 }
