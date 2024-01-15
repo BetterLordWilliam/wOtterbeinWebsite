@@ -13,6 +13,14 @@ function populateHeadModal() {
   });
 }
 
+// ---------------------------------
+// Generate Projects Page Structure.
+// ---------------------------------
+function displayProjects(data) {
+  let projData = JSON.parse(data);
+  console.log(projData);
+}
+
 // -----------------------------------
 // Setup onload.
 // Loads necessary website components.
@@ -34,6 +42,11 @@ function onload() {
     let foot = document.querySelector("#footer-placeholder");
     foot.innerHTML = data;
     footerButtons(foot);
+  });
+
+  // Get the projects page data.
+  ajaxGET("/dbdat?format=projects", function(data) {
+    displayProjects(data);
   });
 
   populateHeadModal();
