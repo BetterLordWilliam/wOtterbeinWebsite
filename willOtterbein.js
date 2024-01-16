@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const connection = require('./app/util/connection.js');
+const PORT = process.env.PORT || 3030;
 
 // App Stuff Cont.
 const app = express();
@@ -116,10 +117,9 @@ app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "/app/html/contact.html"));
 });
 
-// Server Info.
-const port = 8000;
-
 // ----------------
 // Server creation.
 // ----------------
-app.listen(port);
+app.listen(PORT, () => {
+  console.log(`Server started on ${PORT}`)
+});
