@@ -4,9 +4,7 @@
 
 <head>
   <title> Projects </title>
-  <meta charset="UTF-8"
-      name="viewport" 
-      content="width=device-width, initial-scale = 1.0" />  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale = 1.0f">
 
   <!-- Epic Icons -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -43,21 +41,28 @@
     </div>
 
     <!-- Project Preview Template -->
-    <template id="project-preview-template"> 
+    <template id="project-preview-template">
+      <div class="project-container-super">
+        <h1 class="project-text-misc" id="p-card-title"> Project </h1>
+        <div class="project-text-misc" id="p-time-details">
+          <h3 class="project-text-misc" id="p-card-subtitle"> Project Start </h3>
+          <h3 class="project-text-misc" id="p-card-subtitle1"> Project End </h3>
+        </div>
+        <div class="project-text-picture">
+          <img id="p-card-image" alt="Project Image" src="">
+        </div>
+        <p class="project-text-mist" id="p-card-details"> project details </p>
+        <div class="project-technology-details" id="p-tech-details">
+          <span><b>Technologies Used:</b></span>
+          <span class="project-text-misc" id="p-card-tech"></span>
+          <h3 class="project-text-mist"> <a style="text-decoration:none" id="p-card-git">GitHub</a> </h3>
+        </div>
+      </div> 
     </template>
 
     <!-- Index body -->
     <div id="p-body">
-      <div class="project-container-super">
-          <p> Test </p>
-      </div>
-      <div class="project-container-super">
-          <p> Test </p>
-      </div>
-      <div class="project-container-super">
-          <p> Test </p>
-      </div>
-      <br></br>
+      <br id="put-before"></br>
     </div>
 
     <!-- Footer placeholder -->

@@ -18,7 +18,25 @@ function populateHeadModal() {
 // ---------------------------------
 function displayProjects(data) {
   let projData = JSON.parse(data);
-  console.log(projData);
+  let ogCard = document.querySelector("#project-preview-template").content;
+  let cardList = document.querySelector("#p-body");
+
+  for (let i = 0; i < projData.length; i++) {
+    let element = projData[i];
+    console.log(element);
+    let newCard = ogCard.cloneNode(true);
+
+    // Fill in specific information.
+    newCard.querySelector("#p-card-title").innerText = element.ProjName;
+    newCard.querySelector("#p-card-subtitle").innerText = element.ProjStart;
+    newCard.querySelector("#p-card-subtitle1").innerText = element.ProjEnd;
+    newCard.querySelector("#p-card-image").src = element.ProjImage;
+    newCard.querySelector("#p-card-details").innerText = element.ProjDesc;
+    newCard.querySelector("#p-card-tech").innerText = element.ProjTech;
+    newCard.querySelector("#p-card-git").href = element.ProjLink;
+
+    cardList.insertBefore(newCard, document.querySelector("#put-before"));
+  }
 }
 
 // -----------------------------------
