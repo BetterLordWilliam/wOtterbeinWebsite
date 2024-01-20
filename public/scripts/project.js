@@ -19,7 +19,7 @@ function populateHeadModal() {
 function displayProjects(data) {
   let projData = JSON.parse(data);
   let ogCard = document.querySelector("#project-preview-template").content;
-  let cardList = document.querySelector("#p-body");
+  let cardList = document.querySelector("#p-content");
 
   for (let i = 0; i < projData.length; i++) {
     let element = projData[i];

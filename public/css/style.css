@@ -27,7 +27,7 @@ body {
 /* Global Element Styles */
 
 .head {
-  margin-left: 1.5em;
+  margin-left: 5em;
   margin-right: 1.5em;
 }
 
@@ -97,6 +97,10 @@ body {
 #hlink-container-bottom {
   grid-column-start: 2;
   grid-column-end: 2;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2em;
 }
 
 #hlink-list {
@@ -132,8 +136,7 @@ body {
 
 #contacts-container {
   margin: 15% 0 15% 0;
-  justify-content: left;
-  margin-left: 7%;
+  justify-content: right;
 }
 
 .small-icon-image {
@@ -173,4 +176,11 @@ body {
   width: 20%;
   display: grid;
   grid-template-rows: repeat(4, auto);
+}
+
+/* Extra Info Styles */
+
+.extra-container-contents {
+  color: black;
+  margin: 2em 5em 2em 5em;
 }

@@ -2,8 +2,7 @@
 
 #main {
   display: grid;
-  grid-template-rows: 100vh auto 40vh;
-  height: auto;
+  grid-template-rows: 100vh auto 50vh 40vh;
   font-size: 14pt;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -20,14 +19,17 @@
 #p-body {
   grid-row-start: 2;
   grid-row-end: 2;
+  overflow: hidden;
   position: relative;
-  margin-left: 2em;
-  margin-right: 2em;
+}
+
+#p-test-buffer {
+  position: relative;
 }
 
 #footer-placeholder {
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 
 /* I Head Children */
@@ -56,11 +58,11 @@
 
 .project-container-super {
   height: 500px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 1em;
   border-radius: 10px;
-  background: rgba(187, 187, 187, 0.55); 
+  background: rgba(187, 187, 187, 1); 
   display: grid;
   grid-template-rows: 20% 70% 10%;
 }
@@ -148,6 +150,25 @@
 /* Description and Technology */
 
 #p-tech-details {
-  position: absolute;
   bottom: 0px;
+}
+
+/* Projects background image styles */
+
+#p-body-gif {
+  position: absolute;
+  height: 100%
+}
+
+#p-body-color {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#p-content {
+  margin-left: 4em;
+  margin-right: 4em;
+  position: relative;
 }
