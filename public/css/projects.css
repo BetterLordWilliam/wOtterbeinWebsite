@@ -61,10 +61,93 @@
   padding: 1em;
   border-radius: 10px;
   background: rgba(187, 187, 187, 0.55); 
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
 }
 
 .project-container-colour {
   height: 100%;
   width: 100%;
+}
 
+/* Project Container Children */
+
+.pc-row-one {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.pc-row-two {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.pc-row-three {
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+/* Title and Timeline */
+
+#p-card-title {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#p-time-details-super {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: left;
+}
+
+#p-time-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#p-card-subtitle {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#p-card-subtitle1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+/* Picture and Description */
+
+#p-card-image-h {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: 100%;
+  overflow: hidden;
+  margin-right: 0.5em;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#p-card-image {
+  height: auto;
+  width: 100%;
+}
+
+#p-card-detail-text {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  position: relative;
+}
+
+/* Description and Technology */
+
+#p-tech-details {
+  position: absolute;
+  bottom: 0px;
 }

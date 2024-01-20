@@ -43,19 +43,37 @@
     <!-- Project Preview Template -->
     <template id="project-preview-template">
       <div class="project-container-super">
-        <h1 class="project-text-misc" id="p-card-title"> Project </h1>
-        <div class="project-text-misc" id="p-time-details">
-          <h3 class="project-text-misc" id="p-card-subtitle"> Project Start </h3>
-          <h3 class="project-text-misc" id="p-card-subtitle1"> Project End </h3>
+        <!-- Row One -->
+        <div class="pc-row-one">
+          <h1 class="project-text-misc" id="p-card-title"> Project </h1>
+          <div id="p-time-details-super">
+            <div class="project-text-misc" id="p-time-details">
+              <h3 class="project-text-misc" id="p-card-subtitle"> Project Start </h3>
+              <h3 class="project-text-misc" id="p-card-subtitle1"> Project End </h3>
+            </div>
+          </div>
         </div>
-        <div class="project-text-picture">
-          <img id="p-card-image" alt="Project Image" src="">
+
+        <!-- Row Two -->
+        <div class="pc-row-two">
+          <!-- Img -->
+          <div class="project-text-picture" id="p-card-image-h">
+            <img id="p-card-image" alt="Project Image">
+          </div>
+
+          <!-- Desc -->
+          <div class="pc-desc" id="p-card-detail-text">
+            <p class="project-text-misc" id="p-card-details"> project details </p>
+            <div class="project-technology-details" id="p-tech-details">
+              <span><b>Technologies Used:</b></span>
+              <span class="project-text-misc" id="p-card-tech"></span>
+            </div>
+          </div>
         </div>
-        <p class="project-text-mist" id="p-card-details"> project details </p>
-        <div class="project-technology-details" id="p-tech-details">
-          <span><b>Technologies Used:</b></span>
-          <span class="project-text-misc" id="p-card-tech"></span>
-          <h3 class="project-text-mist"> <a style="text-decoration:none" id="p-card-git">GitHub</a> </h3>
+
+        <!-- Row Three -->
+        <div class="pc-row-three">
+          <h3 class="project-text-mist"> <a style="text-decoration:none" target="_blank" id="p-card-git">GitHub</a> </h3>
         </div>
       </div> 
     </template>
