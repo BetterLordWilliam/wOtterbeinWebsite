@@ -1,9 +1,9 @@
 // SETUP
 const express = require('express');
-const http = require('http');
 const path = require('path');
 const fs = require('fs');
-const mysql = require('mysql2');
+const connection = require('./app/util/connection.js');
+const PORT = process.env.PORT || 3030;
 
 // App Stuff Cont.
 const app = express();
@@ -33,8 +33,10 @@ app.get("/hsnip", function(req, res) {
     toSend = fs.readFileSync("./app/html/footer.html", "UTF-8");
     res.setHeader("Content-Type", "text/html");
     res.send(toSend);
+
   } else {
     console.log("Unrecognized html request.");
+  
   }
 
 });
@@ -61,6 +63,29 @@ app.get("/headdata", function(req, res) {
   
   }
 
+});
+
+// Query database for projects.
+async function getProjects() {
+  const sql = "SELECT * FROM projects";
+  const [rows] = await connection.promise().query(sql);
+  return rows;
+}
+
+// ------------------------------------- 
+// Function to handle database requests.
+// -------------------------------------
+app.get("/dbdat", function(req, res) {
+  let formatOfReq = req.query["format"];
+  let toSend;
+
+  if (formatOfReq == "projects") {
+    getProjects().then(function(data){
+      toSend = data;
+      res.setHeader("Content-Type", "program/json");
+      res.send(toSend);
+    });
+  }
 });
 
 // ---------------
@@ -92,10 +117,9 @@ app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "/app/html/contact.html"));
 });
 
-// Server Info.
-const port = 8000;
-
 // ----------------
 // Server creation.
 // ----------------
-app.listen(port);
+app.listen(PORT, () => {
+  console.log(`Server started on ${PORT}`)
+});
