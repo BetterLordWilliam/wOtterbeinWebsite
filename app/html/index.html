@@ -42,6 +42,22 @@
       </div>
     </div>
 
+    <!-- Base Card Template -->
+    <template id="project-preview-template">
+      <label class="card" for="item" id="proj">
+        <img id="i-top-p-one" src="" alt="Top project 1">
+        <label class="project-info" id="proj-info">
+          <h2 class="title"></h2>
+          <span class="extras">
+            <div>
+            <b>Technologies: </b>
+            <span class="subtitle"></span>
+            </div>
+          </span>
+        </label>
+      </label>
+    </template>
+
     <!-- Index body -->
     <div id="i-body">
       <img id="i-body-gif" alt="wtf" src="/img/matrix.jpg"/>
@@ -56,45 +72,8 @@
           <input type="radio" name="slider" id="item-3">
           
           <!-- Project Selection Cards -->
-          <div class="cards">
-            <label class="card" for="item-1" id="song-1">
-              <img src="" alt="Top project 1">
-            </label>
-            <label class="card" for="item-2" id="song-2">
-              <img src="" alt="Top project 2">
-            </label>
-            <label class="card" for="item-3" id="song-3">
-              <img src="" alt="Top project 3">
-            </label>
-          </div>
-
-          <!-- Information section for project -->
-          <div class="player">
-            <div class="upper-part">
-              <div class="info-area" id="test">
-                <label class="song-info" id="song-info-1">
-                  <div class="title"></div>
-                  <div class="sub-line">
-                    <div class="subtitle"></div>
-                    <div class="time"></div>
-                  </div>
-                </label>
-                <label class="song-info" id="song-info-2">
-                  <div class="title"></div>
-                  <div class="sub-line">
-                    <div class="subtitle"></div>
-                    <div class="time"></div>
-                  </div>
-                </label>
-                <label class="song-info" id="song-info-3">
-                  <div class="title"></div>
-                  <div class="sub-line">
-                    <div class="subtitle"></div>
-                    <div class="time"></div>
-                  </div>
-                </label>
-              </div>
-            </div>
+          <div id="preview-cards" class="cards">
+            <div id="put-before"></div>
           </div>
         </div>
       </div>

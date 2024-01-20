@@ -7,12 +7,15 @@ CREATE TABLE projects (
     ProjStart varchar(15),
     ProjEnd varchar(15),
     ProjTech varchar(100),
+    ProjLink varchar(200),
+    ProjAddDate datetime DEFAULT(current_timestamp()),
     PRIMARY KEY (ID)
 );
 
 # ADDITIONS #
 
 ALTER TABLE projects ADD ProjLink varchar(200);
+
 
 ## INFO ##
 INSERT INTO projects (
@@ -60,7 +63,22 @@ INSERT INTO projects (
     'https://github.com/BetterLordWilliam/wOtterbeinWebsite'
 ); # Personal Portfolio.
 
+INSERT INTO projects (
+	ProjName, ProjDesc, ProjImage, ProjStart, ProjEnd, ProjTech, ProjLink
+) VALUES (
+	'lol',
+    'lol',
+    'lol',
+    'lol',
+    'lol',
+    'lol',
+    'lol'
+);
+
 ## UTIL ##
-# DELETE FROM projects WHERE ID = 1;
+# DELETE FROM projects WHERE ID = 5;
+# DROP TABLE projects;
 SELECT * FROM projects;
-DROP TABLE projects;
+
+USE wOtterbein;
+

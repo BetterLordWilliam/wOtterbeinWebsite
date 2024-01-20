@@ -162,19 +162,19 @@ img {
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+#item-1:checked ~ .cards #proj2, #item-2:checked ~ .cards #proj0, #item-3:checked ~ .cards #proj1 {
   transform: translatex(-40%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+#item-1:checked ~ .cards #proj1, #item-2:checked ~ .cards #proj2, #item-3:checked ~ .cards #proj0 {
   transform: translatex(40%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+#item-1:checked ~ .cards #proj0, #item-2:checked ~ .cards #proj1, #item-3:checked ~ .cards #proj2 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
@@ -184,9 +184,15 @@ img {
   }
 }
 
-.player {
-  background-color: #fff;
-  border-radius: 8px;
-  min-width: 320px;
-  padding: 16px 10px;
+/* Card Description Styles */
+
+.project-info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.extras {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
