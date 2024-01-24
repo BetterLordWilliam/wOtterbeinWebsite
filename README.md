@@ -42,6 +42,8 @@ I look forward to hosting the website soon!
 - Aiven online MySQL service
 
 <p align="center">
+<img alt="html" src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png"/>
+<img alt="css" src="https://lkotlarenko.github.io/Exercise-Tech-Gallery/images/css-logo.png"/>
 <img alt="javascript" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png"/>
 </p>
 
