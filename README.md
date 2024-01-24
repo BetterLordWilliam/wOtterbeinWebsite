@@ -19,9 +19,12 @@ the projects displayed on the website.
 - A projects page that displays my web applications with links to source code and live demos
 - A contact page that allows visitors to send me messages via email
 
-<hr></hr>
-
 ## Future Plans
+
+- Tablet and mobile phone responsive view support
+- Hobbies page to showcase the less serious things that I do
+  - Doom maps page
+  - Dark Souls mods
 
 <hr></hr>
 
