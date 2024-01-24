@@ -1,5 +1,7 @@
 # Personal Portfolio Website
 
+<img alt="portfolio_img" src="./public/images/previews/PersonalPortfolio.png"/>
+
 <hr></hr>
 
 ## About the Project
