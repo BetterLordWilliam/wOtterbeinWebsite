@@ -42,6 +42,22 @@
       </div>
     </div>
 
+    <!-- Base Card Template -->
+    <template id="project-preview-template">
+      <label class="card" for="item" id="proj">
+        <img id="i-top-p-one" src="" alt="Top project 1">
+        <label class="project-info" id="proj-info">
+          <h2><a class="github" style="text-decoration:none" target="_blank">Github</a></h2>
+          <span class="extras">
+            <div>
+            <b>Technologies: </b>
+            <span class="subtitle"></span>
+            </div>
+          </span>
+        </label>
+      </label>
+    </template>
+
     <!-- Index body -->
     <div id="i-body">
       <img id="i-body-gif" alt="wtf" src="/img/matrix.jpg"/>
@@ -54,47 +70,12 @@
           <input type="radio" name="slider" id="item-1" checked>
           <input type="radio" name="slider" id="item-2">
           <input type="radio" name="slider" id="item-3">
+         
+          <br></br>
           
           <!-- Project Selection Cards -->
-          <div class="cards">
-            <label class="card" for="item-1" id="song-1">
-              <img src="" alt="Top project 1">
-            </label>
-            <label class="card" for="item-2" id="song-2">
-              <img src="" alt="Top project 2">
-            </label>
-            <label class="card" for="item-3" id="song-3">
-              <img src="" alt="Top project 3">
-            </label>
-          </div>
-
-          <!-- Information section for project -->
-          <div class="player">
-            <div class="upper-part">
-              <div class="info-area" id="test">
-                <label class="song-info" id="song-info-1">
-                  <div class="title"></div>
-                  <div class="sub-line">
-                    <div class="subtitle"></div>
-                    <div class="time"></div>
-                  </div>
-                </label>
-                <label class="song-info" id="song-info-2">
-                  <div class="title"></div>
-                  <div class="sub-line">
-                    <div class="subtitle"></div>
-                    <div class="time"></div>
-                  </div>
-                </label>
-                <label class="song-info" id="song-info-3">
-                  <div class="title"></div>
-                  <div class="sub-line">
-                    <div class="subtitle"></div>
-                    <div class="time"></div>
-                  </div>
-                </label>
-              </div>
-            </div>
+          <div id="preview-cards" class="cards">
+            <div id="put-before"></div>
           </div>
         </div>
       </div>
@@ -113,9 +94,12 @@
     </div>
 
     <!-- Index Extra -->
-    <div id="i-extra">
-      <div id="i-extra-color">
-        <div id="test-test-holder"></div>
+    <div class="extra-container" id="i-extra">
+      <div class="extra-container-color" id="i-extra-color">
+        <div class="extra-container-contents" id="test-test-holder">
+          <h1> Want to Get In Touch? </h1>
+          <p> Click <button id="e-contact-button" class="reg-button white">here</button> to go to the contacts page! </p>
+        </div>
       </div>
     </div>
 

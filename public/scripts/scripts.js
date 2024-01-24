@@ -66,3 +66,15 @@ function navButtons(nav) {
 function footerButtons(foot) {
   pageLinks(foot);
 }
+
+// ------------------------------------------------
+// Link contacts extra button to the contacts page.
+// ------------------------------------------------
+try {
+  let contactButton = document.querySelector("#e-contact-button");
+  contactButton.addEventListener("click", () => {
+    window.location.href = "/contact";
+  }, false); 
+} catch (TypeError) {
+  // No button, whatever
+}

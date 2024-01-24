@@ -72,6 +72,35 @@ async function getProjects() {
   return rows;
 }
 
+// Query database for only top projects.
+// You may consider this hacky...
+// I consider this intuitive!
+// PLEASE NOTE: The above comments refer to the now defunct code.
+// A proper query has now been setup.
+async function getTopProjects() {
+  const sql = `
+    SELECT * FROM projects
+    ORDER BY ProjAddDate DESC
+    LIMIT 3;
+  `;
+  const [rows] = await connection.promise().query(sql);
+  const num = 3;
+  const size = rows.length;
+
+  /*
+  // Define to send array.
+  let toSend = [];
+
+  // Read the bottom elements
+  for (let i = size - 1; i > (size - (num + 1)); i--) {
+    toSend.push(rows[i]);
+  }
+  return toSend;
+  */
+
+  return rows;
+}
+
 // ------------------------------------- 
 // Function to handle database requests.
 // -------------------------------------
@@ -81,6 +110,13 @@ app.get("/dbdat", function(req, res) {
 
   if (formatOfReq == "projects") {
     getProjects().then(function(data){
+      toSend = data;
+      res.setHeader("Content-Type", "program/json");
+      res.send(toSend);
+    });
+
+  } else if (formatOfReq == "top-projects") {
+    getTopProjects().then(function(data) {
       toSend = data;
       res.setHeader("Content-Type", "program/json");
       res.send(toSend);
