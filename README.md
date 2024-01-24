@@ -6,20 +6,22 @@
 
 <hr></hr>
 
-## About the Project
+## Project Overview
+
+### About the Project
 
 The purpose of this website was to challenge my capabilities as a web developer while also serving as a place to house the projects I am most proud of.
 
 Utilizing the Node.js framework, I wrote this website from scratch using vanilla HTML, CSS, and JavaScript. Additionally, a MySQL database, hosted on Aiven, stores the information regarding
 the projects displayed on the website.
 
-## The Features so Far
+### The Features so Far
 
 - A home page that introduces myself and my skills
 - A projects page that displays my web applications with links to source code and live demos
 - A contact page that allows visitors to send me messages via email
 
-## Future Plans
+### Future Plans
 
 - Tablet and mobile phone responsive view support
 - Hobbies page to showcase the less serious things that I do
