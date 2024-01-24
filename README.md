@@ -14,7 +14,7 @@ The creation of this game was an exercise in object-oriented design as well as a
 
 ## General Info
 
-<hr</hr>
+<hr></hr>
 
 ## Technologies
 
