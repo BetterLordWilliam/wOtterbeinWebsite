@@ -42,7 +42,7 @@ I look forward to hosting the website soon!
 - Aiven online MySQL service
 
 <p align="center">
-<img alt="javascript" href="https://www.bing.com/images/search?view=detailV2&ccid=XzKf8LSJ&id=03F8CA2885ACBCFA0E21F4BC1B0C9BD758DF72F1&thid=OIP.XzKf8LSJK5Mm1InNQVUw9wHaIZ&mediaurl=https%3a%2f%2fclipground.com%2fimages%2fjavascript-clipart-logo.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5f329ff0b4892b9326d489cd415530f7%3frik%3d8XLfWNebDBu89A%26pid%3dImgRaw%26r%3d0&exph=1020&expw=900&q=javascript+icon&simid=608014224100261756&FORM=IRPRST&ck=719B15A5D2A28919E855FB527241B800&selectedIndex=18&itb=0&ajaxhist=0&ajaxserp=0"/>
+<img alt="javascript" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png"/>
 </p>
 
 <hr></hr>
