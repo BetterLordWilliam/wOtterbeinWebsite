@@ -8,8 +8,6 @@
 
 ## Project Overview
 
-<div style="background-color: gray;">
-
 ### About the Project
 
 The purpose of this website was to challenge my capabilities as a web developer while also serving as a place to house the projects I am most proud of.
@@ -32,8 +30,6 @@ I look forward to hosting the website soon!
   - Doom maps page
   - Dark Souls mods
 - A blog page to document learnings
-
-</div>
 
 <hr></hr>
 
