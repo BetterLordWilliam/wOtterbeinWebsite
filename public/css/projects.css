@@ -23,7 +23,7 @@
   position: relative;
 }
 
-#p-test-buffer {
+#p-extra {
   position: relative;
 }
 
@@ -36,7 +36,11 @@
 
 #p-head-modal {
   display: grid;
-  grid-template-rows: 60% 40%;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  grid-template-rows: 70% 30%;
 }
 
 #p-head-info {
@@ -46,12 +50,13 @@
 
 #p-head-picture {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 #p-divider-arrow-image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 /* Project Container Styles */
@@ -144,12 +149,16 @@
 #p-card-detail-text {
   grid-column-start: 2;
   grid-column-end: 2;
+  height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Description and Technology */
 
 #p-tech-details {
+  position: absolute;
   bottom: 0px;
 }
 

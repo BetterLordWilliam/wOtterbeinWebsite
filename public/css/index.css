@@ -21,7 +21,7 @@
   grid-row-start: 2;
   grid-row-end: 2;
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 10% 90%;
   color: white;
   position: relative;
   background-repeat: no-repeat;
@@ -97,8 +97,8 @@
 }
 
 #projects-overview {
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -108,19 +108,11 @@
 }
 
 #projects-description {
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
   position: absolute;
   width: 100%;
   height: 100%
-}
-
-/* I Extra Children */
-
-#i-extra-color {
-  height: 100%;
-  width: 100%;
-  position: absolute;
 }
 
 /* Sliding Carosel Slides */
@@ -187,8 +179,12 @@ img {
 /* Card Description Styles */
 
 .project-info {
+  color: black;
   display: grid;
   grid-template-columns: 40% 60%;
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .extras {

@@ -31,7 +31,7 @@ function displayProjects(data) {
     currentCard.querySelector('.card').id = 'proj' + i;
     currentCard.querySelector('.card').setAttribute("for", "item-" + (i + 1));
     currentCard.querySelector('img').src = "/img/previews/" + element.ProjImage;
-    currentCard.querySelector('.title').innerText = element.ProjName;
+    currentCard.querySelector('.github').href = element.ProjLink;
     currentCard.querySelector('.subtitle').innerText = element.ProjTech;
 
     cardList.appendChild(currentCard);

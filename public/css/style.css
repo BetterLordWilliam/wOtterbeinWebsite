@@ -48,6 +48,23 @@ body {
   border-color: yellow;
 }
 
+.reg-button {
+  color: blue;
+  font-family: ubuntu;
+  font-size: 14pt;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.reg-button:hover {
+  border-color: black;
+}
+
+.reg-button:active {
+  border-color: yellow;
+}
+
 /* Global Navbar Styles */
 
 #nav-container {
@@ -179,6 +196,15 @@ body {
 }
 
 /* Extra Info Styles */
+
+.extra-container-color {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
 
 .extra-container-contents {
   color: black;
