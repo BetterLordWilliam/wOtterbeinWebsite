@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-<img alt="portfolio_img" src="./public/images/previews/PersonalPortfolio.png"/>
+<img width="150" height="150" alt="portfolio_img" src="./public/images/previews/PersonalPortfolio.png"/>
 
 <hr></hr>
 
