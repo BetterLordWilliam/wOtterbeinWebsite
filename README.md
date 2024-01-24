@@ -8,19 +8,24 @@
 
 ## About the Project
 
-KeyFinder was a game that I created with Java back during the end of 2022 and during the start of 2023. The project took approximately 3 months to fully complete due to a busy school schedule, but in March of 2023 I made the last official changes.
+The purpose of this website was to challenge my capabilities as a web developer while also serving as a place to house the projects I am most proud of.
 
-Towards the end of the project, while conversing with my Computer Programming 12 instructor, he suggested that I submit this project not only as a final project for his course, but also to the District Authority for the chance of winning $1250. After some anxious waiting, I heard back from the District Authority with good news. KeyFinder and its documentation had secured me the scholarship!
+Utilizing the Node.js framework, I wrote this website from scratch using vanilla HTML, CSS, and JavaScript. Additionally, a MySQL database, hosted on Aiven, stores the information regarding
+the projects displayed on the website.
 
-The creation of this game was an exercise in object-oriented design as well as a test of my knowledge of programming concepts such as recursion.
+## The Features so Far
+
+- A home page that introduces myself and my skills
+- A projects page that displays my web applications with links to source code and live demos
+- A contact page that allows visitors to send me messages via email
 
 <hr></hr>
 
-## General Info
+## Future Plans
 
 <hr></hr>
 
-## Technologies
+## Technologies Used
 
 - Java
 - BeepBox (for the music)
