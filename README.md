@@ -13,7 +13,9 @@
 The purpose of this website was to challenge my capabilities as a web developer while also serving as a place to house the projects I am most proud of.
 
 Utilizing the Node.js framework, I wrote this website from scratch using vanilla HTML, CSS, and JavaScript. Additionally, a MySQL database, hosted on Aiven, stores the information regarding
-the projects displayed on the website.
+the projects displayed on the website. I really wanted to expand upon the concepts that I learned during my time at BCIT, particularily in regard to Node.js, Express.js and SQL. 
+
+I look forward to hosting the website soon!
 
 ### The Features so Far
 
@@ -33,8 +35,11 @@ the projects displayed on the website.
 
 ## Technologies Used
 
-- Java
-- BeepBox (for the music)
+- JavaScript
+- HTML and CSS
+- Node.js (npm)
+- EmailJS (used for the contact page)
+- Aiven online MySQL service
 
 <hr></hr>
 
