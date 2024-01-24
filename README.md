@@ -1,7 +1,7 @@
 # Personal Portfolio Website
 
 <p align="center">
-<img width="300" height="300" alt="portfolio_img" src="./public/images/TitleIcon.png"/>
+<img alt="portfolio_img" src="./public/images/TitleIcon.png"/>
 </p>
 
 <hr></hr>
