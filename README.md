@@ -1,6 +1,8 @@
 # Personal Portfolio Website
 
+<p align="center">
 <img width="300" height="300" alt="portfolio_img" src="./public/images/previews/PersonalPortfolio.png"/>
+</p>
 
 <hr></hr>
 
