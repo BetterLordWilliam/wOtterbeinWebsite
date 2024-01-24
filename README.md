@@ -27,6 +27,7 @@ the projects displayed on the website.
 - Hobbies page to showcase the less serious things that I do
   - Doom maps page
   - Dark Souls mods
+- A blog page to document learnings
 
 <hr></hr>
 
