@@ -47,6 +47,7 @@ I look forward to hosting the website soon!
 <img height="50" alt="javascript" src="https://weebket.com/assets/images/category/6218311d561101645752605.png"/>
 <img height="50" alt="node" src="https://assets-global.website-files.com/5d9bc5d562ffc2869b470941/5e20cb3c0b667ba8c8e07571_icon-node--tech.png"/>
 <img height="50" alt="EmailJS" src="https://www.emailjs.com/logo.png"/>
+<img height="50" alt="Aiven" src="https://opensearch.org/assets/media/partners/aiven.png"/>
 </p>
 
 <hr></hr>
